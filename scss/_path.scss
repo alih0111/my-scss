@@ -1,0 +1,34 @@
+// path style
+#path {
+    .path {
+      @include flex(flex, space-between, null);
+      .right-side {
+        @include section-divider(flex, 50%, 50%);
+        img {
+          border-radius: 6%;
+          -webkit-border-radius: 6%;
+          -moz-border-radius: 6%;
+          -ms-border-radius: 6%;
+          -o-border-radius: 6%;
+        }
+      }
+      .left-side {
+        @include section-divider(flex, 45%, 45%);
+        .path-title {
+          @include flex(flex, center, center);
+          flex-direction: column;
+          text-align: justify;
+          h2 {
+            font-size: $font-size + 10px;
+            margin-bottom: 34px;
+            color: #46484d;
+          }
+          p {
+            font-size: $font-size + 2px;
+            line-height: 42px;
+            color: #868383;
+          }
+        }
+      }
+    }
+  }
